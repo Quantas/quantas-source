@@ -4,8 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm run build:compile",
-    "build:compile": "ng build --prod --output-path dist/",
+    "build": "ng build --prod --output-path dist/",
     "ghpages": "npx ngh --repo=https://$GH_TOKEN@github.com/quantas/quantas.github.io.git --branch=master --cname=www.quantasnet.com",
     "test": "ng test",
     "lint": "ng lint",
@@ -18,6 +17,7 @@
     "@angular/common": "6.1.3",
     "@angular/compiler": "6.1.3",
     "@angular/core": "6.1.3",
+    "@angular/flex-layout": "^5.0.0-beta.15",
     "@angular/forms": "6.1.3",
     "@angular/http": "6.1.3",
     "@angular/material": "6.4.5",
@@ -27,6 +27,7 @@
     "copyfiles": "^2.0.0",
     "core-js": "2.5.7",
     "rxjs": "6.2.2",
+    "rxjs-compat": "6.2.2",
     "zone.js": "0.8.26"
   },
   "devDependencies": {
