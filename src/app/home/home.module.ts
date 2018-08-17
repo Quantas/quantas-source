@@ -6,9 +6,13 @@ import { HomeComponent } from './home.component';
   declarations: [
     HomeComponent
   ],
-  imports: [ RouterModule.forChild([
-    { path: '', component: HomeComponent}
-  ])],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forChild([
+      { path: '', component: HomeComponent }
+    ])
+  ],
+  exports: [
+    RouterModule
+  ]
 })
 export class HomeModule {}

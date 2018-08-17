@@ -25,7 +25,8 @@ import { AppComponent } from './app.component';
     MatSidenavModule,
     MatToolbarModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
