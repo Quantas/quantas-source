@@ -7,8 +7,7 @@
     "build": "ng build --prod --output-path dist/",
     "ghpages": "npx ngh --repo=https://$GH_TOKEN@github.com/quantas/quantas.github.io.git --branch=master --cname=www.quantasnet.com",
     "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
