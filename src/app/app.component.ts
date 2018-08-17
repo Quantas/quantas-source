@@ -4,13 +4,25 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <mat-toolbar class="header" color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow fxHide.gt-sm="true">
+        <mat-icon>menu</mat-icon>
+      </button>
       <span class="title">Andrew Landsverk</span>
-      <button mat-button [routerLink]="['home']">Home</button>
-      <button mat-button [routerLink]="['projects']">Projects</button>
-      <button mat-button [routerLink]="['contact']">Contact</button>
+      <span fxShow fxHide.lt-md="true">
+        <a mat-button [routerLink]="['home']">Home</a>
+        <a mat-button [routerLink]="['projects']">Projects</a>
+        <a mat-button [routerLink]="['contact']">Contact</a>
+      </span>
       <span class="toolbar-filler"></span>
     </mat-toolbar>
     <mat-sidenav-container>
+      <mat-sidenav #sidenav [mode]="'over'" [(opened)]="opened" class="bottom-to-top">
+        <mat-nav-list (click)="closeSidebar()">
+          <a mat-list-item [routerLink]="['home']">Home</a>
+          <a mat-list-item [routerLink]="['projects']">Projects</a>
+          <a mat-list-item [routerLink]="['contact']">Contact</a>
+        </mat-nav-list>
+      </mat-sidenav>
       <mat-sidenav-content>
         <div class="wrapper">
           <div class="main">
@@ -50,4 +62,10 @@ import { Component } from '@angular/core';
     `
   ]
 })
-export class AppComponent {}
+export class AppComponent {
+  opened = false;
+
+  closeSidebar(): void {
+    this.opened = false;
+  }
+}
