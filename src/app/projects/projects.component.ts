@@ -141,6 +141,15 @@ export class ProjectsComponent {
       subHeading: 'Proprietary',
       type: 'angular',
       description: 'User customizable dashboard that provided interactive widgets and links to various systems. This application served as an entry point for internal users.'
+    },
+    {
+      heading: 'Nelnet Planning',
+      subHeading: 'Proprietary',
+      type: 'angular',
+      description: 'A sprint planning application with various different types of voting: Fist of Five, Story Points, Yes/No. The front end is Angular and the back end is Spring with WebSockets. The application is deployed to AWS Elastic Beanstalk. This application was developed in collaboration with Byron Holldorf.',
+      links: [
+        { title: 'Nelnet Planning', href: 'http://fist-of-five.us-east-1.elasticbeanstalk.com' }
+      ]
     }
   ];
 }
