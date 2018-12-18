@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
       </button>
       <span class="title">Andrew Landsverk</span>
       <span fxShow fxHide.lt-md="true">
-        <a mat-button [routerLink]="['home']">Home</a>
         <a mat-button [routerLink]="['projects']">Projects</a>
         <a mat-button [routerLink]="['contact']">Contact</a>
       </span>
@@ -18,7 +17,6 @@ import { Component } from '@angular/core';
     <mat-sidenav-container>
       <mat-sidenav #sidenav [mode]="'over'" [(opened)]="opened" class="bottom-to-top">
         <mat-nav-list (click)="closeSidebar()">
-          <a mat-list-item [routerLink]="['home']">Home</a>
           <a mat-list-item [routerLink]="['projects']">Projects</a>
           <a mat-list-item [routerLink]="['contact']">Contact</a>
         </mat-nav-list>
