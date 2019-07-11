@@ -148,7 +148,7 @@ export class ProjectsComponent {
       type: 'angular',
       description: 'A sprint planning application with various different types of voting: Fist of Five, Story Points, Yes/No. The front end is Angular and the back end is Spring with WebSockets. The application is deployed to AWS Elastic Beanstalk. This application was developed in collaboration with Byron Holldorf.',
       links: [
-        { title: 'Nelnet Planning', href: 'http://fist-of-five.us-east-1.elasticbeanstalk.com' }
+        { title: 'Nelnet Planning', href: 'http://planning.theagileden.com' }
       ]
     }
   ];
